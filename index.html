@@ -1,11 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simon say game</title>
+    <title>Simon Says Game</title>
 </head>
+
 <body>
-    
+    <style>
+        body{
+            text-align: center;
+        }
+
+        .box {
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            border: 15px solid black;
+            border-radius: 20%;
+            margin: 1rem;
+        }
+        .red{
+            background-color: red;
+        }
+        .green{
+            background-color: green;
+        }
+        .yellow{
+            background-color: yellow;
+        }
+        .purple{
+            background-color: purple ;
+        }
+        .flash{
+            background-color: white;
+        }
+        .gameFlash {
+            background-color: violet;
+        }
+    </style>
+    <h1 class="heading">Simon Game</h1>
+    <h2 class="">Press any key to Start</h2>
+    <div class="box">
+        <div class="line-one">
+            <div class="box1 red" type="button" id="red" ></div>
+            <div class="box1 green" type="button" id="green"></div>
+        </div>
+        <div class="line-two">
+            <div class="box1 yellow" type="button" id="yellow"></div>
+            <div class="box1 purple" type="button" id="purple"></div>
+        </div>
+
+        <script src="script.js"></script>
+    </div>
 </body>
+
 </html>
